@@ -1,0 +1,55 @@
+html {
+    font-family: "Roboto", sans-serif;
+    background: steelblue;
+}
+
+body {
+    background-color: lightblue;
+    background: white;
+    /*
+    font-size: 100%;
+    */
+    width: 80%;
+    height: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2.5% 5% 2.5% 5%;
+}
+
+h2 {
+    text-decoration: underline;
+    margin-left: 16px;
+}
+
+img.profile {
+    display: block;
+    float: right;
+    margin: 10px 0 10px 10px;
+    border: solid 5px;
+    border-color: steelblue;
+    border-radius: 5%;
+}
+
+div.name {
+    text-align: left;
+}
+
+
+/*CSS for navbar moved to different file*/
+
+
+/*The bottom bar is aligned differently from other elements*/
+
+div.bottom_bar {
+    text-align: center;
+}
+
+/*Dividing lines - sub-lines are overridden by CSS after*/
+hr {
+    border-width: 4px;
+}
+hr.sub {
+    border-width: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
