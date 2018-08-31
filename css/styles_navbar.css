@@ -1,5 +1,5 @@
 /* Navbar for navigating through various anchors */
-div.navbar
+nav.navbar
 {
     overflow: hidden;
     position: relative;
@@ -8,7 +8,7 @@ div.navbar
     padding: 0;
 }
 
-div.navbar ul {
+nav.navbar ul {
     list-style-type: none;
     overflow: auto;
     width: 100%;
@@ -17,7 +17,7 @@ div.navbar ul {
     background-color: steelblue;
     color: white;
 }
-div.navbar ul li {
+nav.navbar ul li {
     display: inline;
     text-align: center;
     float: left;
@@ -31,7 +31,7 @@ padding: 8px;
 background-color: steelblue;
 }
 
-div.navbar ul li a {
+nav.navbar ul li a {
     display: inline-block;
     color: white;
     padding: 6px;
@@ -39,7 +39,7 @@ div.navbar ul li a {
     text-align: right;
 }
 
-div.navbar ul li a:hover {
+nav.navbar ul li a:hover {
     background-color: darkslateblue;
     text-decoration: underline;
 }

@@ -40,7 +40,7 @@ div.name {
 
 /*The bottom bar is aligned differently from other elements*/
 
-div.bottom_bar {
+footer.bottom_bar {
     text-align: center;
 }
 
