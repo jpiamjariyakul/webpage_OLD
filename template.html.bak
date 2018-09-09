@@ -67,12 +67,12 @@
         <hr />
 
         <article class="<!--Insert class name here-->">
-            <heading>
+            <header>
                 <h2><!--Insert page title here--></h2>
                 <p>
                     <!--Brief description of page-->
                 </p>
-            </heading>
+            </header>
 
             <hr class="sub"/>
 

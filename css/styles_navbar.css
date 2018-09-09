@@ -40,6 +40,6 @@ nav.navbar ul li a {
 }
 
 nav.navbar ul li a:hover {
-    background-color: navy;
+    background-color: rgb(29, 78, 169);
     text-decoration: underline;
 }
