@@ -2,10 +2,10 @@
 <html lang="en">
 
     <!--
-Note: some elements have their CSS linked to them for different default values
-If needed, override them via the <[tag] style="[CSS overrides]">
--->
-
+        Note: some elements have their CSS linked to them for different default values
+        If needed, override them via the <[tag] style="[CSS overrides]">
+    -->
+    
     <title>
         Jaypat Piamjariyakul
     </title>
@@ -16,33 +16,39 @@ If needed, override them via the <[tag] style="[CSS overrides]">
         <link rel="stylesheet" type="text/css" href="css/styles_navbar.css" />
     </head>
 
-    
+    <body>
         <nav class="navbar" id="top">
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html">Main</a>
                 </li>
                 <li>
-                    <a href="education.html">Education</a>
+                    <a href="index.html#profile">Profile</a>
                 </li>
                 <li>
-                    <a href="experience.html">Experience</a>
+                    <a href="index.html#education">Education</a>
                 </li>
                 <li>
-                    <a href="achievements.html">Awards</a>
+                    <a href="index.html#experience">Experience</a>
                 </li>
                 <li>
-                    <a href="skills.html">Skills &amp; Hobbies</a>
+                    <a href="index.html#awards">Awards</a>
                 </li>
                 <li>
-                    <a href="portfolio.html">Portfolio</a>
+                    <a href="index.html#interests">Interests</a>
+                </li>
+                <li>
+                    <a href="index.html#technology">Technology</a>
+                </li>
+                <li>
+                    <a href="">Portfolio</a>
                 </li>
             </ul>
         </nav>
 
         <!-- Profile Image -->
         <img src="images/img_profile.png" alt="Profile Image" width="200px" height="200px" class="profile" />
-
+        
         <!-- Name -->
         <header role="heading" class="name" id="name">
 
@@ -60,22 +66,17 @@ If needed, override them via the <[tag] style="[CSS overrides]">
 
         <hr />
 
-        <article class="soundcloud">
+        <article class="<!--Insert class name here-->">
             <heading>
-                <h2>SoundCloud</h2>
+                <h2><!--Insert page title here--></h2>
                 <p>
-                    My SoundCloud music compositions &amp; arrangements.
-                </p>
-                <p>
-                    My composition styles range from symphonic and orchestral music, to electronic, synth, jazz, and rock &#40;albeit not mutually exclusive to each other&#41;
+                    <!--Brief description of page-->
                 </p>
             </heading>
 
-            <!--hr class="sub"/-->
+            <hr class="sub"/>
 
-            <section>
-                <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/584576682&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">Your browser does not support iframe.</iframe>
-            </section>
+            <!--Insert relevant content here-->
 
         </article>
 
@@ -86,9 +87,5 @@ If needed, override them via the <[tag] style="[CSS overrides]">
             <p>Hosted on GitHub Pages</p>
             <a href="#top">&uArr; Back to Top</a>
         </footer>
-
-        <!--
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/481142337&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" />
--->
     </body>
 </html>
