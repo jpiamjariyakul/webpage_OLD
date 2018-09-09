@@ -44,3 +44,7 @@ nav.navbar ul li a:hover {
     background-color: rgb(29, 78, 169);
     text-decoration: underline;
 }
+
+nav.navbar ul li a.active {
+    background-color: rgb(55, 95, 130);
+}

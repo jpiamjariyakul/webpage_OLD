@@ -84,13 +84,25 @@ hr.sub {
     margin-right: 20px;
 }
 
+/*Change list icon to square, from standard circle*/
+li
+{
+    list-style-type: square
+}
+
 img.profile
 {
     max-width: 100%;
     height: 250px;
 }
 
-li
+/*TEST: responsive screen center if screen < 600px*/
+@media screen and (max-width: 600px)
 {
-    list-style-type: square
+    img.profile
+    {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
