@@ -40,6 +40,6 @@ nav.navbar ul li a {
 }
 
 nav.navbar ul li a:hover {
-    background-color: darkslateblue;
+    background-color: navy;
     text-decoration: underline;
 }
