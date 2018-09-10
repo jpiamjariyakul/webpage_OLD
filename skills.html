@@ -10,85 +10,88 @@
         <link rel="stylesheet" type="text/css" href="css/styles_main.css" />
         <link rel="stylesheet" type="text/css" href="css/styles_navbar.css" />
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
     </head>
 
     <body>
-        <nav class="navbar" id="top">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="education.html">Education</a>
-                </li>
-                <li>
-                    <a href="experience.html">Experience</a>
-                </li>
-                <li>
-                    <a href="achievements.html">Awards</a>
-                </li>
-                <li>
-                    <a href="skills.html" class="active">Skills &amp; Hobbies</a>
-                </li>
-                <li>
-                    <a href="portfolio.html">Portfolio</a>
-                </li>
-            </ul>
+        <nav class="navbar" id="navbar">
+            <h2 style="display: none;">Navbar</h2>
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+            <a href="achievements.html">Awards</a>
+            <a href="skills.html" class="active">Skills &amp; Hobbies</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="javascript:void(0);" class="icon" onclick="pageResponseNav()">&#9776;</a>
         </nav>
+        <!--Scripting for collapsible navbar on mobile-->
+        <script>
+            function pageResponseNav()
+            {
+                var element = document.getElementById("navbar");
+                if (element.className === "navbar")
+                {
+                    element.className += " responsive";
+                }
+                else
+                {
+                    element.className = "navbar";
+                }
+            }
+        </script>
 
-        <!-- Name -->
-        <header role="heading" class="name" id="name">
-            <!-- Profile Image -->
-            <img src="images/img_profile.png" alt="Profile Image" class="profile" />
+        <div class="main">
+            <!-- Name -->
+            <header role="heading" class="name" id="name">
+                <!-- Profile Image -->
+                <img src="images/img_profile.png" alt="Profile Image" class="profile" />
+                <h1>Jaypat Piamjariyakul
+                </h1>
 
-            <h1>Jaypat Piamjariyakul
-            </h1>
-
-            <p>1/152 The&nbsp;Park&nbsp;Chidlom, Ploenjit&nbsp;Road, Lumpini, Pathumwan, Bangkok TH 10330</p>
-            <p>+44-7380-217-217 | +66-93-495-1454</p>
-            <p>
-                <a href="https://www.linkedin.com/in/jaypat-piamjariyakul-63ba11158/">LinkedIn Profile</a>
-                | E-mail: <a href="mailto:j.piamjariyakul@outlook.com">j.piamjariyakul&#64;outlook.com</a>
-                or <a href="mailto:jp17033@bristol.ac.uk">jp17033&#64;bristol.ac.uk</a>
-            </p>
-            <hr />
-        </header>
-
-
-        <article class="interests">
-            <header>
-                <h2>Interests &amp; Hobbies</h2>
+                <p>
+                    <a href="https://www.linkedin.com/in/jaypat-piamjariyakul-63ba11158/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/jpiamjariyakul"><i class="fab fa-github-square"></i></a>
+                    <a href="https://soundcloud.com/debstup-studios/"><i class="fab fa-soundcloud"></i></a>
+                </p> 
+                <p>E-mail: <a href="mailto:j.piamjariyakul@outlook.com">j.piamjariyakul&#64;outlook.com</a>
+                    or <a href="mailto:jp17033@bristol.ac.uk">jp17033&#64;bristol.ac.uk</a>
+                </p>
+                <hr />
             </header>
-            <p>
-                Passionate about <b>game development &amp; design</b>, learning <b>new languages</b> &#40;both verbal, programming, and markup&#41;, <b>programming</b> personal projects for leisure, and conjuring projects with <b>Arduino microcontroller</b>.
-            </p>
-            <p>
-                Hobbies include <b>music composition</b>, <b>graphic design</b>, <b>photography</b> &#40;mostly landscape &amp; architecture&#41;, cartoon/comic <b>sketching</b> &amp; <b>fashion design</b>, and <b>creative writing</b>.
-            </p>
 
-        </article>
+            <article class="interests">
+                <header>
+                    <h2>Interests &amp; Hobbies</h2>
+                </header>
+                <p>
+                    Passionate about <b>game development &amp; design</b>, learning <b>new languages</b> &#40;both verbal, programming, and markup&#41;, <b>programming</b> personal projects for leisure, and conjuring projects with <b>Arduino microcontroller</b>.
+                </p>
+                <p>
+                    Hobbies include <b>music composition</b>, <b>graphic design</b>, <b>photography</b> &#40;mostly landscape &amp; architecture&#41;, cartoon/comic <b>sketching</b> &amp; <b>fashion design</b>, and <b>creative writing</b>.
+                </p>
 
-        <hr class="sub" />
+            </article>
 
-        <article class="proficiencies">
-            <heading>
-                <h2>Technology Proficiencies</h2>
-            </heading>
+            <article class="proficiencies">
+                <heading>
+                    <h2>Technology Proficiencies</h2>
+                </heading>
 
-            <p>
-                Proficient in using <b>Microsoft&nbsp;Office</b> suites &#40;including Excel and Publisher&#41;, utilizing IDEs alongside <b>programming</b> languages &#40;such as Python, C, and VB&#46;net&#41;, and <b>audio manipulation</b> via Digital Audio Workspaces &#40;DAWs&#41;.
-            </p>
-            <p>
-                Developing skills in <b>HTML, CSS,</b> and <b>JavaScript</b>. Continuously improving on <b>Android application development</b>, and <b>music composition</b> via notation softwares and DAWs.
-            </p>
-        </article>
+                <p>
+                    Proficient in using <b>Microsoft&nbsp;Office</b> suites &#40;including Excel and Publisher&#41;, utilizing IDEs alongside <b>programming</b> languages &#40;such as Python, C, and VB&#46;net&#41;, and <b>audio manipulation</b> via Digital Audio Workspaces &#40;DAWs&#41;.
+                </p>
+                <p>
+                    Developing skills in <b>HTML, CSS,</b> and <b>JavaScript</b>. Continuously improving on <b>Android application development</b>, and <b>music composition</b> via notation softwares and DAWs.
+                </p>
+            </article>
 
-        <hr />
+            <hr />
 
-        <!-- Bottom Bars -->
-        <footer role="contentinfo" class="bottom_bar" id="bottom_bar">
-            <p>Hosted on GitHub Pages</p>
-            <a href="#top">&uArr; Back to Top</a>
-        </footer>
+            <!-- Bottom Bars -->
+            <footer role="contentinfo" class="bottom_bar" id="bottom_bar">
+                <p>Hosted on GitHub Pages</p>
+                <a href="#top">&uArr; Back to Top</a>
+            </footer>
+        </div>
     </body>
 </html>

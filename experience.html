@@ -10,174 +10,179 @@
         <link rel="stylesheet" type="text/css" href="css/styles_main.css" />
         <link rel="stylesheet" type="text/css" href="css/styles_navbar.css" />
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
     </head>
 
     <body>
-
-        <nav class="navbar" id="top">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="education.html">Education</a>
-                </li>
-                <li>
-                    <a href="experience.html" class="active">Experience</a>
-                </li>
-                <li>
-                    <a href="achievements.html">Awards</a>
-                </li>
-                <li>
-                    <a href="skills.html">Skills &amp; Hobbies</a>
-                </li>
-                <li>
-                    <a href="portfolio.html">Portfolio</a>
-                </li>
-            </ul>
+        <nav class="navbar" id="navbar">
+            <h2 style="display: none;">Navbar</h2>
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html" class="active">Experience</a>
+            <a href="achievements.html">Awards</a>
+            <a href="skills.html">Skills &amp; Hobbies</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="javascript:void(0);" class="icon" onclick="pageResponseNav()">&#9776;</a>
         </nav>
+        <!--Scripting for collapsible navbar on mobile-->
+        <script>
+            function pageResponseNav()
+            {
+                var element = document.getElementById("navbar");
+                if (element.className === "navbar")
+                {
+                    element.className += " responsive";
+                }
+                else
+                {
+                    element.className = "navbar";
+                }
+            }
+        </script>
 
-        <!-- Name -->
-        <header role="heading" class="name" id="name">
-            <!-- Profile Image -->
-            <img src="images/img_profile.png" alt="Profile Image" class="profile" />
+        <div class="main">
+            <!-- Name -->
+            <header role="heading" class="name" id="name">
+                <!-- Profile Image -->
+                <img src="images/img_profile.png" alt="Profile Image" class="profile" />
+                <h1>Jaypat Piamjariyakul
+                </h1>
 
-            <h1>Jaypat Piamjariyakul
-            </h1>
-
-            <p>1/152 The&nbsp;Park&nbsp;Chidlom, Ploenjit&nbsp;Road, Lumpini, Pathumwan, Bangkok TH 10330</p>
-            <p>+44-7380-217-217 | +66-93-495-1454</p>
-            <p>
-                <a href="https://www.linkedin.com/in/jaypat-piamjariyakul-63ba11158/">LinkedIn Profile</a>
-                | E-mail: <a href="mailto:j.piamjariyakul@outlook.com">j.piamjariyakul&#64;outlook.com</a>
-                or <a href="mailto:jp17033@bristol.ac.uk">jp17033&#64;bristol.ac.uk</a>
-            </p>
-            <hr />
-        </header>
-
-
-        <article class="experience">
-            <header>
-                <h2>Experience &amp; Volunteering</h2>
-                <!--p>
-List of current &amp; previous experiences of varying fields.
-</p-->
+                <p>
+                    <a href="https://www.linkedin.com/in/jaypat-piamjariyakul-63ba11158/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/jpiamjariyakul"><i class="fab fa-github-square"></i></a>
+                    <a href="https://soundcloud.com/debstup-studios/"><i class="fab fa-soundcloud"></i></a>
+                </p> 
+                <p>E-mail: <a href="mailto:j.piamjariyakul@outlook.com">j.piamjariyakul&#64;outlook.com</a>
+                    or <a href="mailto:jp17033@bristol.ac.uk">jp17033&#64;bristol.ac.uk</a>
+                </p>
+                <hr />
             </header>
 
-            <section>
-                <h3>Programmer</h3>
-                <b>November 2017 – Present</b>
-                <br />
-                <i>Programmer (<a href="https://github.com/jpiamjariyakul">GitHub&nbsp;Profile</a>)</i>
 
-                <ul>
-                    <li>Programmed multiple solutions for certain target groups, both as hobby and/or per requested, via multiple languages e.g. Python, JavaScript, Java, etc
-                    </li>
+            <article class="experience">
+                <header>
+                    <h2>Experience &amp; Volunteering</h2>
+                    <!--p>
+List of current &amp; previous experiences of varying fields.
+</p-->
+                </header>
 
-                    <li>Created numerical analysis &amp; transform visualisation programs, to aid my cohorts with Engineering Mathematics, with Python
-                    </li>
+                <section>
+                    <h3>Programmer</h3>
+                    <b>November 2017 – Present</b>
+                    <br />
+                    <i>Programmer (<a href="https://github.com/jpiamjariyakul">GitHub&nbsp;Profile</a>)</i>
 
-                    <li>Created a student intranet website wrapper, on Android, to aid students of University of Bristol
-                    </li>
+                    <ul>
+                        <li>Programmed multiple solutions for certain target groups, both as hobby and/or per requested, via multiple languages e.g. Python, JavaScript, Java, etc
+                        </li>
 
-                    <li>All programs created are pre-planned before formulating the program itself, allowing for faster programming at a constricted timeframe
-                    </li>
+                        <li>Created numerical analysis &amp; transform visualisation programs, to aid my cohorts with Engineering Mathematics, with Python
+                        </li>
 
-                    <li>Requested programs are tailored to target’s specifications, and any issues with the program are dealt with swiftly, via a placeholder workaround and a permanent solution 
-                    </li>
-                </ul>
-            </section>
+                        <li>Created a student intranet website wrapper, on Android, to aid students of University of Bristol
+                        </li>
 
-            <hr class="sub"/>
+                        <li>All programs created are pre-planned before formulating the program itself, allowing for faster programming at a constricted timeframe
+                        </li>
 
-            <section>
-                <h3>Video Editing and Graphic Design</h3>
-                <b>May 2017 - Present</b>
-                <br />
-                <i>Graphic Designer &amp; Video Editor 
-                </i> 
-                <ul>
-                    <li>Utilized several video-editing software (Vegas) and various graphic-design suites (Inkscape, GIMP 2, Paint.NET) to manipulate &amp; edit logos, photos, and videos, both as hobby and requested 
-                    </li>
-                    <li>Worked alongside Strathallan School’s Media Department to edit the outro sequence for their promotional materials
-                    </li>
-                    <li>Redesigned a logo for Bristol Electrical &amp; Electronic Engineering Society
-                    </li>
-                </ul>
-            </section>
+                        <li>Requested programs are tailored to target’s specifications, and any issues with the program are dealt with swiftly, via a placeholder workaround and a permanent solution 
+                        </li>
+                    </ul>
+                </section>
 
-            <hr class="sub"/>
+                <hr class="sub"/>
 
-            <section>
-                <h3>Music Composition</h3>
-                <b>January 2015 - Present</b>
-                <br />
-                <i>Composer (<a href="https://soundcloud.com/debstup-studios/">SoundCloud&nbsp;Profile</a>) 
-                </i> 
-                <ul>
-                    <li>Utilized multiple Digital Audio Workspaces and notation softwares, alongside several sound libraries and synths, to compose music for various media, each with varying genre and style, both as hobby/practice and commissions 
-                    </li>
-                    <li>Commissioned by Strathallan School’s Media Department to compose music for their promotional materials
-                    </li>
-                    <li>Collaborated with a DeviantArt user for their personal project
-                    </li>
-                </ul>
-            </section>
+                <section>
+                    <h3>Video Editing and Graphic Design</h3>
+                    <b>May 2017 - Present</b>
+                    <br />
+                    <i>Graphic Designer &amp; Video Editor 
+                    </i> 
+                    <ul>
+                        <li>Utilized several video-editing software (Vegas) and various graphic-design suites (Inkscape, GIMP 2, Paint.NET) to manipulate &amp; edit logos, photos, and videos, both as hobby and requested 
+                        </li>
+                        <li>Worked alongside Strathallan School’s Media Department to edit the outro sequence for their promotional materials
+                        </li>
+                        <li>Redesigned a logo for Bristol Electrical &amp; Electronic Engineering Society
+                        </li>
+                    </ul>
+                </section>
 
-            <hr class="sub"/>
+                <hr class="sub"/>
 
-            <section>
-                <h3>Comic Book Club</h3>
-                <b>October 2015 - February 2017</b>
-                <br />
-                <i>Member of Storyboard &amp; Writer's&nbsp;Room</i>
-                <ul>
-                    <li>Helped form the Writer's&nbsp;Room, alongside other fellow creative writers,  of the Comic Book Club at Strathallan&nbsp;School, and presented ideas and storyboards to other divisions of the club, allowing for rapid workflow while maintaining quailty of each aspect
-                    </li>
-                </ul>
-            </section>
+                <section>
+                    <h3>Music Composition</h3>
+                    <b>January 2015 - Present</b>
+                    <br />
+                    <i>Composer (<a href="https://soundcloud.com/debstup-studios/">SoundCloud&nbsp;Profile</a>) 
+                    </i> 
+                    <ul>
+                        <li>Utilized multiple Digital Audio Workspaces and notation softwares, alongside several sound libraries and synths, to compose music for various media, each with varying genre and style, both as hobby/practice and commissions 
+                        </li>
+                        <li>Commissioned by Strathallan School’s Media Department to compose music for their promotional materials
+                        </li>
+                        <li>Collaborated with a DeviantArt user for their personal project
+                        </li>
+                    </ul>
+                </section>
 
-            <hr class="sub"/>
+                <hr class="sub"/>
 
-            <section>
-                <h3>Public Service</h3>
-                <b>September 2013 - June 2015</b>
-                <br />
-                <i>Team Member</i>
-                <ul>
-                    <li>
-                        Regularly assisted the local Kinross community with cleaning up the surrounding woodlands, and set up methods of maintaining the integrity &amp; sustainability of the area's future
-                    </li>
-                </ul>
-            </section>
+                <section>
+                    <h3>Comic Book Club</h3>
+                    <b>October 2015 - February 2017</b>
+                    <br />
+                    <i>Member of Storyboard &amp; Writer's&nbsp;Room</i>
+                    <ul>
+                        <li>Helped form the Writer's&nbsp;Room, alongside other fellow creative writers,  of the Comic Book Club at Strathallan&nbsp;School, and presented ideas and storyboards to other divisions of the club, allowing for rapid workflow while maintaining quailty of each aspect
+                        </li>
+                    </ul>
+                </section>
 
-            <hr class="sub"/>
+                <hr class="sub"/>
 
-            <section>
-                <h3>Duke of Edinburgh: Bronze Expedition</h3><b>September 2013 - June 2014</b>
-                <br />
-                <i>Navigator &amp; Resource Management</i>
-                <ul>
-                    <li>
-                        Analysed the Kinross area and managed the navigation roadmap in the woodlands prior to the expedition, and managed the team's resources in the expedition
-                    </li>
-                    <li>
-                        Alongside team members, plotted the shortest pathway to destinations without compromising safety considerations
-                    </li>
-                    <li>
-                        Rationed each team member's resource for overnight stay at designated area
-                    </li>
-                </ul>
-            </section>
+                <section>
+                    <h3>Public Service</h3>
+                    <b>September 2013 - June 2015</b>
+                    <br />
+                    <i>Team Member</i>
+                    <ul>
+                        <li>
+                            Regularly assisted the local Kinross community with cleaning up the surrounding woodlands, and set up methods of maintaining the integrity &amp; sustainability of the area's future
+                        </li>
+                    </ul>
+                </section>
 
-        </article>
+                <hr class="sub"/>
 
-        <hr />
+                <section>
+                    <h3>Duke of Edinburgh: Bronze Expedition</h3><b>September 2013 - June 2014</b>
+                    <br />
+                    <i>Navigator &amp; Resource Management</i>
+                    <ul>
+                        <li>
+                            Analysed the Kinross area and managed the navigation roadmap in the woodlands prior to the expedition, and managed the team's resources in the expedition
+                        </li>
+                        <li>
+                            Alongside team members, plotted the shortest pathway to destinations without compromising safety considerations
+                        </li>
+                        <li>
+                            Rationed each team member's resource for overnight stay at designated area
+                        </li>
+                    </ul>
+                </section>
 
-        <!-- Bottom Bars -->
-        <footer role="contentinfo" class="bottom_bar" id="bottom_bar">
-            <p>Hosted on GitHub Pages</p>
-            <a href="#top">&uArr; Back to Top</a>
-        </footer>
+            </article>
+
+            <hr />
+
+            <!-- Bottom Bars -->
+            <footer role="contentinfo" class="bottom_bar" id="bottom_bar">
+                <p>Hosted on GitHub Pages</p>
+                <a href="#top">&uArr; Back to Top</a>
+            </footer>
+        </div>
     </body>
 </html>
