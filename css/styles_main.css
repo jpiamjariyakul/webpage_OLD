@@ -1,15 +1,13 @@
+/* Default styling for all pages */
 html
 {
     font-family: "Noto Serif", serif;
-    background: steelblue;
+    background-color: steelblue;
     overflow: scroll;
-}
-
-body
-{
     font-size: 100%;
 }
 
+/* Applies to any content not including the navigation bar */
 div.main
 {
     padding: 16px 32px 16px 32px;
@@ -17,37 +15,19 @@ div.main
     height: 20%;
     margin-right: auto;
     margin-left: auto;
-    background-color: lightblue;
     background: white;
+    margin-top: 20px;
 }
 
-footer
-{
-    padding-bottom: 20px;
-}
-
-/*
-h1
-{
-    font-size: 8vw;
-}
-
-h3
-{
-    font-size: 6vw;
-}
-
-p, li
-{
-    font-size: 4.5vw;
-}
+/* Applies to name/image/link headings on every page
+Is not visible in mobile devices (hidden)
 */
-
-header.name h1, header.name p
+header.name
 {
     text-align: center
 }
 
+/* Applies to h2 subheading - is underlined for emphasis */
 h2
 {
     text-decoration: underline;
@@ -55,43 +35,30 @@ h2
 }
 
 /*
-header.name p
-{
-    margin-left: 15px;
-}
+Styling for profile image
+* If not on mobile, sets image to float-right; otherwise, centers image
+* Causes image to be square-rounded with border
+* Sets max image size to be 20px
 */
-
 img.profile {
     display: block;
     float: right;
     margin: 15px 15px 15px 15px;
     border: solid 8px;
     border-color: rgb(55, 95, 130);
-    border-radius: 100%;
+    border-radius: 25%;
     max-width: 100%;
     height: 200px;
 }
 
-div.name {
-    text-align: left;
-}
-
-
 /*CSS for navbar moved to different file*/
-
-
-/*The bottom bar is aligned differently from other elements*/
-
-footer.bottom_bar
-{
-    text-align: center;
-}
 
 /*Dividing lines - sub-lines are overridden by CSS after*/
 hr
 {
     border-width: 4px;
 }
+/* Sub dividing-lines are thinner & less apparent */
 hr.sub
 {
     border-width: 1px;
@@ -105,12 +72,11 @@ li
     list-style-type: square
 }
 
-div.main
-{
-    margin-top: 20px;
-}
-
-/*TEST: responsive screen center if screen < 600px*/
+/* General settings for mobile devices' page, excluding navbar (see other CSS sheet)
+* Causes margin on top of regular page to expand from 20px to 40px
+* Moves image from float-right to center
+* Excluding index.html (which has an overriding style), hides name/links/image header entirely
+*/
 @media screen and (max-width: 600px)
 {
     div.main
@@ -129,4 +95,13 @@ div.main
     {
         display: none;
     }
+}
+
+/* Applies to footer of page - only creates padding for ease in readability
+Unlike other general contents in page, text is aligned to center instead of left
+*/
+footer
+{
+    text-align: center;
+    padding-bottom: 20px;
 }

@@ -25,28 +25,14 @@
             <a href="javascript:void(0);" class="icon" onclick="pageResponseNav()">&#9776;</a>
         </nav>
         <!--Scripting for collapsible navbar on mobile-->
-        <script>
-            function pageResponseNav()
-            {
-                var element = document.getElementById("navbar");
-                if (element.className === "navbar")
-                {
-                    element.className += " responsive";
-                }
-                else
-                {
-                    element.className = "navbar";
-                }
-            }
-        </script>
+        <script src="js/pageResponseNav.js"></script>
 
         <div class="main">
             <!-- Name -->
-            <header role="heading" class="name" id="name">
+            <header role="heading" class="name">
                 <!-- Profile Image -->
                 <img src="images/img_profile.png" alt="Profile Image" class="profile" />
-                <h1>Jaypat Piamjariyakul
-                </h1>
+                <h1>Jaypat Piamjariyakul</h1>
 
                 <p>
                     <a href="https://www.linkedin.com/in/jaypat-piamjariyakul-63ba11158/"><i class="fab fa-linkedin"></i></a>
@@ -88,9 +74,9 @@
             <hr />
 
             <!-- Bottom Bars -->
-            <footer role="contentinfo" class="bottom_bar" id="bottom_bar">
+            <footer role="contentinfo" class="bottom_bar">
                 <p>Hosted on GitHub Pages</p>
-                <a href="#top">&uArr; Back to Top</a>
+                <a href="#">&uArr; Back to Top</a>
             </footer>
         </div>
     </body>
