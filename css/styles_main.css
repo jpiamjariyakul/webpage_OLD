@@ -24,7 +24,7 @@ Is not visible in mobile devices (hidden)
 */
 header.name
 {
-    text-align: center
+    text-align: center;
 }
 
 /* Applies to h2 subheading - is underlined for emphasis */
@@ -81,7 +81,7 @@ li
 {
     div.main
     {
-        margin-top: 40px;
+        margin-top: 0px;
     }
     
     img.profile
