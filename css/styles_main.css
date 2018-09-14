@@ -2,7 +2,7 @@
 html
 {
     font-family: "Noto Serif", serif;
-    background-color: steelblue;
+    background-color: rgb(55, 95, 130);
     overflow: scroll;
     font-size: 100%;
 }
@@ -40,7 +40,8 @@ Styling for profile image
 * Causes image to be square-rounded with border
 * Sets max image size to be 20px
 */
-img.profile {
+img.profile
+{
     display: block;
     float: right;
     margin: 15px 15px 15px 15px;
@@ -77,11 +78,11 @@ li
 * Moves image from float-right to center
 * Excluding index.html (which has an overriding style), hides name/links/image header entirely
 */
-@media screen and (max-width: 600px)
+@media screen and (max-width: 625px)
 {
     div.main
     {
-        margin-top: 0px;
+        margin-top: 36px;
     }
     
     img.profile
