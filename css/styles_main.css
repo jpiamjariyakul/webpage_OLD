@@ -84,14 +84,14 @@ li
     {
         margin-top: 36px;
     }
-    
+
     img.profile
     {
         float: none;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     header.name
     {
         display: none;
@@ -104,5 +104,11 @@ Unlike other general contents in page, text is aligned to center instead of left
 footer
 {
     text-align: center;
-    padding-bottom: 20px;
+    padding: 8px 32px 8px 32px;
+    width: 80%;
+    height: 20%;
+    margin-right: auto;
+    margin-left: auto;
+    background: white;
+    margin-top: 10px;
 }
