@@ -11,10 +11,8 @@ html
 div.main
 {
     padding: 16px 32px 16px 32px;
-    width: 80%;
-    height: 20%;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 180px;
     background: white;
     margin-top: 20px;
 }
@@ -42,14 +40,16 @@ Styling for profile image
 */
 img.profile
 {
-    display: block;
     float: right;
-    margin: 15px 15px 15px 15px;
+    margin: 15px;
+    
+    display: block;
+    height: 200px;
+    
     border: solid 8px;
     border-color: rgb(55, 95, 130);
     border-radius: 25%;
     max-width: 100%;
-    height: 200px;
 }
 
 /*CSS for navbar moved to different file*/
@@ -73,31 +73,6 @@ li
     list-style-type: square
 }
 
-/* General settings for mobile devices' page, excluding navbar (see other CSS sheet)
-* Causes margin on top of regular page to expand from 20px to 40px
-* Moves image from float-right to center
-* Excluding index.html (which has an overriding style), hides name/links/image header entirely
-*/
-@media screen and (max-width: 625px)
-{
-    div.main
-    {
-        margin-top: 36px;
-    }
-
-    img.profile
-    {
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    header.name
-    {
-        display: none;
-    }
-}
-
 /* Applies to footer of page - only creates padding for ease in readability
 Unlike other general contents in page, text is aligned to center instead of left
 */
@@ -105,10 +80,41 @@ footer
 {
     text-align: center;
     padding: 8px 32px 8px 32px;
-    width: 80%;
-    height: 20%;
-    margin-right: auto;
-    margin-left: auto;
-    background: white;
     margin-top: 10px;
+    margin-right: auto;
+    margin-left: 180px;
+    background: white;
+}
+
+/* General settings for mobile devices' page, excluding navbar (see other CSS sheet)
+* Causes margin on top of regular page to expand from 20px to 40px
+* Moves image from float-right to center
+* Excluding index.html (which has an overriding style), hides name/links/image header entirely
+*/
+@media screen and (max-width: 875px)
+{
+    img.profile
+    {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    div.main
+    {
+        margin-top: 36px;
+        margin-left: 0;
+    }
+
+    footer
+    {
+        margin-left: 0;
+    }
+
+    header.name
+    {
+        display: none;
+    }
 }

@@ -1,25 +1,49 @@
-/*Blue background color for navbar*/
+/*
+*Blue background color for navbar*
 nav.navbar
 {
-    background-color: rgb(55, 95, 130);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    margin-left: auto;
-    margin-right: auto;
+background-color: rgb(55, 95, 130);
+position: fixed;
+width: 100%;
+top: 0;
+margin-left: auto;
+margin-right: auto;
 }
 
-/* Styles for links in navbar */
+* Styles for links in navbar *
 nav.navbar a
 {
-    display: inline-block;
-    text-align: center;
+display: inline-block;
+text-align: center;
+color: gold;
+padding: 10px 10px;
+font-size: 18px;
+text-decoration: none;
+position: relative;
+float: left;
+}
+*/
+
+nav.navbar
+{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+    width: 180px;
+
+    overflow: auto;
+    background-color: rgb(55, 95, 130);
+}
+
+nav.navbar a
+{
+    display: block;
     color: gold;
-    padding: 10px 10px;
-    font-size: 18px;
+    padding: 8px 16px;
     text-decoration: none;
-    position: relative;
-    float: left;
+    float: none;
 }
 
 /* Marks current page with different color + underline */
@@ -42,66 +66,63 @@ nav.navbar a:hover
 nav.navbar a.icon
 {
     display: none;
-    text-decoration: none;
     position: fixed;
-    float: left;
+
+    text-decoration: none;
+
+    background-color: rgb(55, 95, 130);
+
     border-left: rgb(38, 65, 89) solid 5px;
     border-bottom: rgb(38, 65, 89) solid 5px;
+    
     font-weight: bolder;
-    background-color: rgb(55, 95, 130);
+    float: right;
 }
 
 /* Applies to mobile links:
 When screen size < 600px, hide all links except "Home" and expand icon
 */
-@media screen and (max-width: 750px)
+@media screen and (max-width: 600px)
 {
-    /* Applies to regular navbar */
+    /* Applies to mobile navbar when not clicked */
     nav.navbar
     {
         top: 0;
         position: fixed;
+
+        height: auto;
         width: 100%;
     }
     nav.navbar a:not(:first-child)
     {
         display: none;
     }
-    nav.navbar a[class$="active"]
+    nav.navbar a.active
     {
-        display: block;
         background-color: rgb(55, 95, 130);
         text-decoration: none;
+
+        display: block;
         color: gold;
     }
     nav.navbar a.icon
     {
         display: inline-block;
+        position: fixed;
+
         right: 0;
         top: 0;
-        background-color: rgb(55, 95, 130);
+
+        text-align: center;
+
         height: auto;
         width: auto;
     }
-    /* Applies to responsive navbar (when screen size < 600px) */
-    nav.navbar.responsive 
-    {
-        position: fixed;
-    }
+
+    /* Applies to responsive navbar when clicked */
     nav.navbar.responsive a.icon 
     {
-        position: fixed;
-        float: right;
-        background-color: rgb(55, 95, 130);
-        text-align: center;
-    }
-    nav.navbar.responsive a.active
-    {
-
         background-color: steelblue;
-        text-decoration: underline;
-        font-weight: bold;
-        color: white;
     }
     nav.navbar.responsive a 
     {
@@ -115,5 +136,13 @@ When screen size < 600px, hide all links except "Home" and expand icon
     {
         margin-left: 12px;
         margin-top: 0;
+    }
+    nav.navbar.responsive a.active
+    {
+        /* Different from non-responsive (aka unclicked)! */
+        background-color: steelblue;
+        text-decoration: underline;
+        font-weight: bold;
+        color: white;
     }
 }
