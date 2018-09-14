@@ -1,7 +1,7 @@
 {
   "background_color": "white",
   "description": "Online CV of Jaypat Piamjariyakul",
-  "display": "fullscreen",
+  "display": "standalone",
   /*"icons": [
     {
       "src": "icon/fox-icon.png",
