@@ -7,22 +7,28 @@ html
     font-size: 100%;
 }
 
-/* Applies to any content not including the navigation bar */
-div.main
-{
-    padding: 16px 32px 16px 32px;
-    margin-right: auto;
-    margin-left: 180px;
-    background: white;
-    margin-top: 20px;
-}
-
 /* Applies to name/image/link headings on every page
 Is not visible in mobile devices (hidden)
 */
 header.name
 {
     text-align: center;
+    padding: 8px 32px 8px 32px;
+    margin: 10px;
+    margin-right: auto;
+    margin-left: 180px;
+    background: white;
+    overflow: auto;
+}
+
+/* Applies to any content not including the navigation bar */
+div.main
+{
+    padding: 16px 32px 16px 32px;
+    margin: 10px;
+    margin-right: auto;
+    margin-left: 180px;
+    background: white;
 }
 
 /* Applies to h2 subheading - is underlined for emphasis */
@@ -41,11 +47,11 @@ Styling for profile image
 img.profile
 {
     float: right;
-    margin: 15px;
-    
+    margin: 10px;
+
     display: block;
     height: 200px;
-    
+
     border: solid 8px;
     border-color: rgb(55, 95, 130);
     border-radius: 25%;
@@ -80,7 +86,7 @@ footer
 {
     text-align: center;
     padding: 8px 32px 8px 32px;
-    margin-top: 10px;
+    margin: 10px;
     margin-right: auto;
     margin-left: 180px;
     background: white;
@@ -102,19 +108,26 @@ footer
 }
 @media screen and (max-width: 600px)
 {
+    header.name
+    {
+        display: none;
+        margin-top: 36px;
+        margin-left: 0;
+    }
     div.main
     {
         margin-top: 36px;
         margin-left: 0;
     }
+    
+    div.main.home
+    {
+        margin-top: 10px;
+    }
+
 
     footer
     {
         margin-left: 0;
-    }
-
-    header.name
-    {
-        display: none;
     }
 }
