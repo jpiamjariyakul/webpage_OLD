@@ -8,7 +8,6 @@
 
     <head>
         <link rel="stylesheet" type="text/css" href="css/styles_main.css" />
-        <link rel="stylesheet" type="text/css" href="css/styles_navbar.css" />
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
     </head>
@@ -20,7 +19,7 @@
             <a href="index.html">Home</a>
             <a href="education.html">Education</a>
             <a href="experience.html">Experience</a>
-            <a href="achievements.html">Awards</a>
+            <a href="achievements.html">Achievements</a>
             <a href="skills.html">Skills &amp; Hobbies</a>
             <a href="portfolio.html" class="active">Portfolio</a>
             <a href="blog.html">Blog</a>
@@ -61,13 +60,14 @@
 
                 <!--hr class="sub"/-->
 
-                <section style="padding: 8px;">
+                <section>
                     <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/584576682%3Fsecret_token%3Ds-GpNq9&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">Your browser does not support iframe.</iframe>
                 </section>
 
             </article>
             <hr />
-            <article class="graphic">
+            <article class="gallery">
+                <link rel="stylesheet" type="text/css" href="css/styles_portfolio_gallery.css" />
                 <header>
                     <h2>Graphic Design</h2>
                     <p>
@@ -77,8 +77,31 @@
                         Currently in development; more to be added later.
                     </p>
                 </header>
-                <section style="padding: 8px;">
+                <section>
+                    <style>
+                        div.gallery
+                        {
+                            overflow-x: scroll;
+                            overflow-y: hidden;
+                            white-space: nowrap;
+                        }
 
+                        /*div.image:hover
+                        {
+                        border: 2px solid #777;
+                        }*/
+
+                        div.gallery img
+                        {
+                            display: inline-block;
+                            height: 200px;
+                            margin: 4px;
+                        }
+                    </style>
+                    <div class="gallery">
+                        <!-- Add images to add to gallery here -->
+                        <img src="images/Portfolio/img_vector_logo_beees.png" alt="University of Bristol's EEEE Society (BEEES) Logo Redesign" width="350" />
+                    </div>
                 </section>
             </article>
         </div>
