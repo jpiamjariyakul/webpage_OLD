@@ -116,8 +116,6 @@ When screen size < 600px, hide all links except "Home" and expand icon
         margin: 6px;
         height: auto;
         width: auto;
-        border-radius: 8px;
-        border: 4px solid steelblue;
         background-color: rgb(50, 80, 110);
     }
 
