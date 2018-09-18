@@ -37,6 +37,12 @@ div.main
     background: white;
 }
 
+/* Applies to all headers */
+h1, h2, h3, h4, h5, h6
+{
+    font-family: "Open Sans", sans-serif;
+}
+
 /* Applies to h2 subheading - is underlined for emphasis */
 h2
 {
@@ -90,6 +96,7 @@ Unlike other general contents in page, text is aligned to center instead of left
 */
 footer
 {
+    font-family: "Open Sans", sans-serif;
     text-align: center;
     padding: 8px 32px 8px 32px;
     margin: 10px;

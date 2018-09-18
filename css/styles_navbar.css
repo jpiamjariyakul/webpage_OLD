@@ -51,7 +51,6 @@ nav.navbar a.active
 {
     text-decoration: underline;
     font-weight: bold;
-    color: white;
 }
 
 /* Marks page hovered with mouse */
@@ -64,15 +63,20 @@ nav.navbar a:hover
 nav.navbar a.icon
 {
     display: none;
-
     text-decoration: none;
-
-    /*background-color: rgb(55, 95, 130);
-    background-color: rgb(50, 80, 110);*/
-
     font-weight: bolder;
     float: right;
     height: auto;
+}
+
+nav.navbar a.active::before
+{
+    content: "\25B8\2009";
+}
+
+nav.navbar a.active::after
+{
+    content: "\2009\25C2";
 }
 
 /* Applies to mobile links:
@@ -100,7 +104,6 @@ When screen size < 600px, hide all links except "Home" and expand icon
     nav.navbar a.active
     {
         text-decoration: none;
-
         display: block;
         color: gold;
     }
@@ -119,11 +122,11 @@ When screen size < 600px, hide all links except "Home" and expand icon
         border: 4px solid steelblue;
         background-color: rgb(50, 80, 110);
     }
-    
+
     nav.navbar a.icon:hover
     {
         background-color: rgb(30, 50, 70);
-        
+
     }
 
     /* Applies to responsive navbar when clicked */
@@ -142,17 +145,17 @@ When screen size < 600px, hide all links except "Home" and expand icon
         font-weight: bold;
         color: white;
     }
-    
+
     nav.navbar.responsive a.active::before
     {
         content: "\25B8\2009"
     }
-    
+
     nav.navbar.responsive a.active::after
     {
         content: "\2009\25C2"
     }
-    
+
     nav.navbar.responsive a.icon
     {
         margin: 6px;
