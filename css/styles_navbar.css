@@ -29,7 +29,7 @@ float: left;
 nav.navbar
 {
     height: 100%;
-    width: 225px;
+    width: 200px;
     position: fixed;
     top: 10px;
     overflow: auto;
@@ -46,11 +46,19 @@ nav.navbar a
     float: none;
 }
 
+nav.navbar a.active::before
+{
+    content: "\25B8\2009";
+}
 /* Marks current page with different color + underline */
 nav.navbar a.active
 {
-    text-decoration: underline;
     font-weight: bold;
+    text-decoration: none;
+}
+nav.navbar a.active::after
+{
+    content: "\2009\25C2";
 }
 
 /* Marks page hovered with mouse */
@@ -67,16 +75,6 @@ nav.navbar a.icon
     font-weight: bolder;
     float: right;
     height: auto;
-}
-
-nav.navbar a.active::before
-{
-    content: "\25B8\2009";
-}
-
-nav.navbar a.active::after
-{
-    content: "\2009\25C2";
 }
 
 /* Applies to mobile links:
@@ -110,9 +108,9 @@ When screen size < 600px, hide all links except "Home" and expand icon
     nav.navbar a.icon
     {
         display: block;
-        float: right;
+        float: none;
         text-align: center;
-        position: fixed;
+        position: absolute;
         top: 0;
         right: 0;
         margin: 6px;
@@ -136,24 +134,6 @@ When screen size < 600px, hide all links except "Home" and expand icon
         text-align: left;
         /*margin-left: 45px;*/
         margin-left: 0;
-    }
-    nav.navbar.responsive a.active
-    {
-        /* Different from non-responsive (aka unclicked)! */
-        /*background-color: steelblue;*/
-        text-decoration: underline;
-        font-weight: bold;
-        color: white;
-    }
-
-    nav.navbar.responsive a.active::before
-    {
-        content: "\25B8\2009"
-    }
-
-    nav.navbar.responsive a.active::after
-    {
-        content: "\2009\25C2"
     }
 
     nav.navbar.responsive a.icon

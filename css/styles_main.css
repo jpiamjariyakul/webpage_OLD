@@ -22,7 +22,7 @@ header.name
     padding: 8px 32px 8px 32px;
     margin: 10px;
     margin-right: auto;
-    margin-left: 225px;
+    margin-left: 200px;
     background: white;
     overflow: auto;
 }
@@ -33,7 +33,7 @@ div.main
     padding: 16px 32px 16px 32px;
     margin: 10px;
     margin-right: auto;
-    margin-left: 225px;
+    margin-left: 200px;
     background: white;
 }
 
@@ -101,7 +101,7 @@ footer
     padding: 8px 32px 8px 32px;
     margin: 10px;
     margin-right: auto;
-    margin-left: 225px;
+    margin-left: 200px;
     background: white;
 }
 
