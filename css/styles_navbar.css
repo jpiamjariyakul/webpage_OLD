@@ -75,6 +75,9 @@ nav.navbar a.icon
     font-weight: bolder;
     float: right;
     height: auto;
+    margin: 10px;
+    border: solid 0px black;
+    border-radius: 20px;
 }
 
 /* Applies to mobile links:
@@ -113,7 +116,6 @@ When screen size < 600px, hide all links except "Home" and expand icon
         position: absolute;
         top: 0;
         right: 0;
-        margin: 6px;
         height: auto;
         width: auto;
         background-color: rgb(50, 80, 110);
@@ -136,7 +138,6 @@ When screen size < 600px, hide all links except "Home" and expand icon
 
     nav.navbar.responsive a.icon
     {
-        margin: 6px;
         background-color: rgb(30, 50, 70);
     }
 }
