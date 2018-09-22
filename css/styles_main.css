@@ -7,9 +7,15 @@
 html
 {
     font-family: "Noto Serif", serif;
-    background-color: rgb(55, 95, 130);
+    /*background-color: rgb(55, 95, 130);*/
+    background-color: rgb(238,240,242);
     overflow: scroll;
     font-size: 100%;
+}
+
+header.name, div.main, footer
+{
+    background: white;
 }
 
 /* Applies to name/image/link headings on every page
@@ -23,8 +29,12 @@ header.name
     margin: 10px;
     margin-right: auto;
     margin-left: 200px;
-    background: white;
     overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p, a
+{
+    color: rgb(29, 31, 33);
 }
 
 /* Applies to any content not including the navigation bar */
@@ -34,7 +44,6 @@ div.main
     margin: 10px;
     margin-right: auto;
     margin-left: 200px;
-    background: white;
 }
 
 /* Applies to all headers */
@@ -56,19 +65,19 @@ Styling for profile image
 * Causes image to be square-rounded with border
 * Sets max image size to be 20px
 */
-img.profile
+/*img.profile
 {
     float: right;
     margin: 10px 30px;
 
     display: flex;
-    height: 200px;
+    height: 150px;
 
     border: solid 8px;
     border-color: rgb(55, 95, 130);
     border-radius: 25%;
     max-width: 100%;
-}
+}*/
 
 /*CSS for navbar moved to different file*/
 
@@ -102,7 +111,6 @@ footer
     margin: 10px;
     margin-right: auto;
     margin-left: 200px;
-    background: white;
 }
 
 /* General settings for mobile devices' page, excluding navbar (see other CSS sheet)
@@ -116,12 +124,13 @@ footer
     {
         text-align: center;
     }
-    img.profile
+    /*img.profile
     {
         float: none;
         margin-left: auto;
         margin-right: auto;
-    }
+        height: 200px;
+    }*/
 }
 
 @media screen and (max-width: 700px)
@@ -148,4 +157,48 @@ footer
     {
         margin-left: 0;
     }
+}
+
+/* FontAwesome icons */
+a i.fab
+{
+    font-size: 25px;
+    color: dimgrey;
+}
+
+/* Applies to blog page
+* Creates dividing lines between articles & years
+*/
+section.blog section.year::after
+{
+    content: "";
+    display: block;
+    border-style: inset;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-width: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section.blog section.year section.month::after
+{
+    content: "";
+    display: block;
+    border-style: inset;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-width: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+section.blog section.year section.month article::after
+{
+    content: "";
+    display: block;
+    border-style: inset;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-width: 1px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
