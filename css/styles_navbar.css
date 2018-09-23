@@ -120,6 +120,7 @@ When screen size < 600px, hide all links except "Home" and expand icon
         height: auto;
         width: auto;
         background-color: rgb(113, 115, 116);
+        transition: 0.5s;
     }
 
     nav.navbar a.icon:hover
