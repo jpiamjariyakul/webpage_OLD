@@ -41,7 +41,7 @@ nav.navbar a
     font-family: "Open Sans", sans-serif;
     display: block;
     /*color: gold;*/
-    color: rgb(45, 46, 48);
+    color: rgb(238,240,242);
     padding: 8px 16px;
     text-decoration: none;
     float: none;
@@ -119,13 +119,13 @@ When screen size < 600px, hide all links except "Home" and expand icon
         right: 0;
         height: auto;
         width: auto;
-        background-color: rgb(113, 115, 116);
+        background-color: transparent;
         transition: 0.5s;
     }
 
     nav.navbar a.icon:hover
     {
-        background-color: rgb(71, 72, 75);
+        background-color: rgb(60, 60, 60);
         color: rgb(200, 205, 210);
 
     }
@@ -141,7 +141,7 @@ When screen size < 600px, hide all links except "Home" and expand icon
 
     nav.navbar.responsive a.icon
     {
-        background-color: rgb(71, 72, 75);
+        background-color: rgb(60, 60, 60);
         color: rgb(200, 205, 210);
     }
 }
