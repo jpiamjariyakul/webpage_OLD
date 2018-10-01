@@ -130,6 +130,15 @@ When screen size < 600px, hide all links except "Home" and expand icon
 
     }
 
+    nav.navbar.responsive
+    {
+        
+        -webkit-transition:200ms ease;
+        -moz-transition:200ms ease;
+        -o-transition:200ms ease;
+        transition:200ms ease;
+    }
+    
     /* Applies to responsive navbar when clicked */
     nav.navbar.responsive a 
     {

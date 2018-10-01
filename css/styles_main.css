@@ -199,6 +199,6 @@ section.blog section.year section.month article::after
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     border-width: 1px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
 }

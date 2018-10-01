@@ -61,36 +61,36 @@
                     <p>
                         My composition styles range from symphonic and orchestral music, to electronic, synth, jazz, and rock &#40;albeit not mutually exclusive to each other&#41;
                     </p>
-                    <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/584576682%3Fsecret_token%3Ds-GpNq9&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">Your browser does not support iframe.</iframe>
+                    <iframe width="100%" height="400px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/584576682%3Fsecret_token%3Ds-GpNq9&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">Your browser does not support iframe.</iframe>
                 </section>
-                
+
                 <hr class="sub" />
-                
-                
+
+
                 <section>
                     <p>
                         Playlist of my arrangements &amp; original soundtrack compositions
                     </p>
-                    <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/610666803%3Fsecret_token%3Ds-8bhsW&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/610666803%3Fsecret_token%3Ds-8bhsW&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
                 </section>
-                
+
                 <hr class="sub" />
-                
+
                 <section>
                     <p>
                         Playlist of my original classical compositions
                     </p>
-                    <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/606236157%3Fsecret_token%3Ds-5VNIu&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">Your browser does not support iframe.</iframe>
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/606236157%3Fsecret_token%3Ds-5VNIu&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">Your browser does not support iframe.</iframe>
                 </section>
-                
+
                 <hr class="sub" />
-                
-                
+
+
                 <section>
                     <p>
                         Playlist of my original jazz/swing-based compositions
                     </p>
-                    <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/604905651%3Fsecret_token%3Ds-S4GHu&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">Your browser does not support iframe.</iframe>
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/604905651%3Fsecret_token%3Ds-S4GHu&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">Your browser does not support iframe.</iframe>
                 </section>
             </article>
             <hr />
@@ -109,26 +109,48 @@
                     <style>
                         div.gallery
                         {
-                            overflow-x: scroll;
-                            overflow-y: hidden;
+                            overflow: auto;
                             white-space: nowrap;
+
                         }
 
                         /*div.image:hover
                         {
                         border: 2px solid #777;
                         }*/
-
-                        div.gallery img
+                        div.gallery section
                         {
+                            float: left;
+                            margin: 10px;
                             display: inline-block;
+                        }
+                        div.gallery section img
+                        {
                             height: 200px;
                             margin: 4px;
                         }
+
+                        div.gallery section p
+                        {
+                            /*
+                            padding: 5px;
+                            text-align: center;
+                            white-space: normal;
+                            */
+                            display: none;
+                        }
                     </style>
                     <div class="gallery">
-                        <!-- Add images to add to gallery here -->
-                        <img src="images/Portfolio/img_vector_logo_beees.png" alt="University of Bristol's EEEE Society (BEEES) Logo Redesign" width="350" />
+                        <section class="image" style="width: 350px">
+                            <!-- Add images to add to gallery here -->
+                            <img src="images/Portfolio/img_vector_logo_beees.png" alt="University of Bristol's EEEE Society (BEEES) Logo Redesign" width="350px" />
+                            <p>My redesign of the University of Bristol's Electrical &amp; Electronic Engineering Society's logo</p>
+                        </section>
+                        <section class="image" style="width: 200px">
+                            <!-- Add images to add to gallery here -->
+                            <img src="images/Portfolio/img_raster_profile.png" alt="Self-portrait" />
+                            <p>My self-portrait silhouette experiment on graphic design</p>
+                        </section>
                     </div>
                 </section>
             </article>
