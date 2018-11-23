@@ -32,8 +32,9 @@ header.name
     overflow: auto;
 }
 
-h1, h2, h3, h4, h5, h6, p, a
+h1, h2, h3, h4, h5, h6, a
 {
+    font-family: "Open Sans", sans-serif;
     color: rgb(29, 31, 33);
 }
 
@@ -44,12 +45,6 @@ div.main
     margin: 10px;
     margin-right: auto;
     margin-left: 200px;
-}
-
-/* Applies to all headers */
-h1, h2, h3, h4, h5, h6
-{
-    font-family: "Open Sans", sans-serif;
 }
 
 /* Applies to h2 subheading - is underlined for emphasis */
@@ -146,12 +141,6 @@ footer
         margin-top: 0;
         margin-left: 0;
     }
-    
-    div.main.home
-    {
-        margin-top: 10px;
-    }
-
 
     footer
     {

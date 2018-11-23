@@ -11,6 +11,7 @@ TBD: make site more mobile-friendly
 
     <head>
         <link rel="stylesheet" type="text/css" href="css/styles_main.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles_print.css" media="print" />
 
         <!--Links Google Fonts to webpage-->
         <!--link href="https://fonts.googleapis.com/css?family=Noto+Serif|Open+Sans" rel="stylesheet" /-->
@@ -22,11 +23,13 @@ TBD: make site more mobile-friendly
     <body>
         <nav class="navbar" id="navbar">
             <h2 style="display: none;">Navbar</h2>
-            <a href="index.html" title="Homepage" class="active">Home</a>
-            <a href="#education" title="Education Profile">Education</a>
-            <a href="#experience" title="Experience & Volunteering Profile">Experience</a>
-            <a href="#skills" title="Skills & Hobbies Profile">Skills &amp; Hobbies</a>
-            <a href="#achievements" title="Achievements & Recognition Profile">Achievements</a>
+            <a href="#" title="Homepage" class="active">Home</a>
+            <div class="hide-mobile">
+                <a href="#education" title="Education Profile">Education</a>
+                <a href="#experience" title="Experience & Volunteering Profile">Experience</a>
+                <a href="#skills" title="Skills & Hobbies Profile">Skills &amp; Hobbies</a>
+                <a href="#achievements" title="Achievements & Recognition Profile">Achievements</a>
+            </div>
             <a href="portfolio.html" title="Portfolio Profile">Portfolio</a>
             <a href="blog.html" title="Blog">Blog</a>
             <a href="javascript:void(0);" class="icon" onclick="pageResponseNav()">&#9776;</a>
@@ -41,7 +44,7 @@ TBD: make site more mobile-friendly
             <h1>Jaypat Piamjariyakul
             </h1>
 
-            <p>
+            <p class="links">
                 <a href="https://www.linkedin.com/in/jaypat-piamjariyakul-63ba11158/"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/jpiamjariyakul"><i class="fab fa-github-square"></i></a>
                 <a href="https://soundcloud.com/jpiamjariyakul/"><i class="fab fa-soundcloud"></i></a>
@@ -51,7 +54,7 @@ TBD: make site more mobile-friendly
             </p>
         </header>
 
-        <div class="main home">
+        <div class="main">
             
             <article class="education" id="education">
                 <header>
@@ -325,6 +328,8 @@ List of my current &amp; previous education institutes to which I was enrolled i
         <!-- Bottom Bars -->
         <footer role="contentinfo" class="bottom_bar">
             <p>Made with love &amp; hosted on GitHub Pages</p>
+            
+            <!--script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script-->
         </footer>
     </body>
 </html>
