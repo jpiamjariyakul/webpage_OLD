@@ -1,0 +1,40 @@
+@media print
+{    
+    nav.navbar
+    {
+        display: none; /* !important;*/
+    }
+    
+    header.name, div.main
+    {
+        margin: 0;
+        padding: 0;
+    }
+    
+    header.name p.links
+    {
+        display: none;
+    }
+    
+    h1, h2, h3, h4, h5, h6, section, p
+    {
+        font-size: 10pt;
+        padding: 0;
+    }
+    
+    hr
+    {
+        border-width: 1px;
+    }
+    
+    hr.sub
+    {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    footer
+    {
+        display: none;
+    }
+}

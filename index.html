@@ -11,6 +11,7 @@ TBD: make site more mobile-friendly
 
     <head>
         <link rel="stylesheet" type="text/css" href="css/styles_main.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles_print.css" media="print" />
 
         <!--Links Google Fonts to webpage-->
         <!--link href="https://fonts.googleapis.com/css?family=Noto+Serif|Open+Sans" rel="stylesheet" /-->
@@ -22,11 +23,13 @@ TBD: make site more mobile-friendly
     <body>
         <nav class="navbar" id="navbar">
             <h2 style="display: none;">Navbar</h2>
-            <a href="index.html" title="Homepage" class="active">Home</a>
-            <a href="education.html" title="Education Profile">Education</a>
-            <a href="experience.html" title="Experience & Volunteering Profile">Experience</a>
-            <a href="achievements.html" title="Achievements & Recognition Profile">Achievements</a>
-            <a href="skills.html" title="Skills & Hobbies Profile">Skills &amp; Hobbies</a>
+            <a href="#" title="Homepage" class="active">Home</a>
+            <div class="hide-mobile">
+                <a href="#education" title="Education Profile">Education</a>
+                <a href="#experience" title="Experience & Volunteering Profile">Experience</a>
+                <a href="#skills" title="Skills & Hobbies Profile">Skills &amp; Hobbies</a>
+                <a href="#achievements" title="Achievements & Recognition Profile">Achievements</a>
+            </div>
             <a href="portfolio.html" title="Portfolio Profile">Portfolio</a>
             <a href="blog.html" title="Blog">Blog</a>
             <a href="javascript:void(0);" class="icon" onclick="pageResponseNav()">&#9776;</a>
@@ -41,7 +44,7 @@ TBD: make site more mobile-friendly
             <h1>Jaypat Piamjariyakul
             </h1>
 
-            <p>
+            <p class="links">
                 <a href="https://www.linkedin.com/in/jaypat-piamjariyakul-63ba11158/"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/jpiamjariyakul"><i class="fab fa-github-square"></i></a>
                 <a href="https://soundcloud.com/jpiamjariyakul/"><i class="fab fa-soundcloud"></i></a>
@@ -51,117 +54,282 @@ TBD: make site more mobile-friendly
             </p>
         </header>
 
-        <div class="main home">
-            <!--div class="profile" id="profile">
-<h2>Profile</h2>
-<p>
-Currently an undergraduate student at University of Bristol studying Electrical Engineering &amp; currently expected a First-Class degree. 
-</p>
-<p>
-Alongside my technical skills, my creative know-how is also varied, and I have continuously built upon my soft skills via experiences gained from both university and hobbies.
-</p>
-</div-->
-            <h2 style="display: none;">Welcome</h2>
-            <section>
-                <p>
-                    <strong>Welcome.</strong>
-                </p>
-                <p>
-                    
-                </p>
-            </section>
-            <hr class="sub" />
-            <section>
-                <nav role="navigation">
+        <div class="main">
+            
+            <article class="education" id="education">
+                <header>
+                    <h2>Education</h2>
+                    <!--p>
+List of my current &amp; previous education institutes to which I was enrolled into
+</p-->
+                </header>
+
+                <!--hr class="sub"/-->
+
+                <section id="education_bristol">
+                    <h3>University&nbsp;of&nbsp;Bristol</h3>
+                    <b>September 2017 - Present</b>
+                    <br />
+                    <i>Masters in Engineering, Electrical &amp; Electronic Engineering</i>
+                    <br />
+                    Expected Classification: First Class
                     <ul>
                         <li>
-                            <a href="education.html" title="Education Profile">Education</a>
+                            Second Year
                         </li>
                         <li>
-                            <a href="experience.html" title="Experience & Volunteering Profile">Experience &amp; Volunteering</a>
-                        </li>
-                        <li>
-                            <a href="achievements.html" title="Achievements & Recognition Profile">Awards &amp; Recognition</a>
-                        </li>
-                        <li>
-                            <a href="skills.html" title="Skills & Hobbies Profile">Skills &#40;technical &amp; otherwise&#41; &amp; Hobbies</a>
-                        </li>
-                        <li>
-                            <a href="portfolio.html" title="Portfolio Profile">Portfolio of my media-related works</a>
-                        </li>
-                        <li>
-                            <a href="blog.html" title="Blog">Development blog</a>
+                            First Year
+                            <ul>
+                                <li>
+                                    Modules include Engineering Mathematics, Programming, Linear Circuit Analysis, Digital &amp; Analogue Electronics, Electrostatics &amp; Magnetostatics, and Radio Electronics
+                                </li>
+                                <li>
+                                    Worked with other course members to design &amp; analyse an ultrasonic transducer, including building its base circuitry &amp; later utilising a microcontroller to replace the base circuit
+                                </li>
+                                <li>
+                                    Programmed, in teams, a PNM file conversion tool in C &#40;from PNM to PGM, and vice versa&#41;; project later included an image posterization function
+                                </li>
+                                <li>
+                                    Aided in organising an Industrial Mentoring Scheme trip, for my team members, in regards to a visit at Inmarsat's Headquarters in London
+                                </li>
+                                <li>
+                                    Alongside my cohorts, generated data sets for our Electronics 1's Op-Amp laboratory results via MatLab and Excel, and presented such results in a lab script with Word
+                                </li>
+                            </ul>
                         </li>
                     </ul>
-                </nav>
-            </section>
-            <!--hr class="sub" />
-            <section>
+                </section>
+
+                <hr class="sub"/>
+
+                <section id="education_strathallan">
+                    <h3>Strathallan&nbsp;School</h3>
+                    <b>September 2012 - June 2017</b>
+                    <br />
+                    <ul>
+                        <li>
+                            A-Level – B, including A in Mathematics
+                        </li>
+                        <li>
+                            GCSE – A, including B in English Language &amp; Literature, and A* in Mathematics
+                        </li>
+                    </ul>
+                </section>
+
+            </article>
+            
+            <hr />
+            
+            <article class="experience" id="experience">
+                <header>
+                    <h2>Experience, Projects, &amp; Volunteering</h2>
+                </header>
+
+                <section>
+                    <h3>Electronics Team Leader</h3>
+                    <b>October 2018 - Present</b>
+                    <br />
+                    <i>CitiBlox's Electronics Team Leader</i>
+                    
+                    <ul>
+                        <li>Leader of the Electronics Team at CitiBlox, a Bristol-based startup aiming to produce &quot;smart pavements&quot; for the city
+                        </li>
+                        
+                        <li>
+                            Responsible for coordinating my team cohorts, arranging meetings &amp; gatherings, liaising ideas, generating roadmaps &amp; milestones for the team's sub-projects, etc.
+                        </li>
+                    </ul>
+                </section>
+                
+                <hr class="sub"/>
+                
+                <section>
+                    <h3>Programming &amp; Markup</h3>
+                    <b>November 2017 – Present</b>
+                    <br />
+                    <i>Hobbyist Programmer &amp; Web Designer (<a href="https://github.com/jpiamjariyakul">GitHub&nbsp;Profile</a>)</i>
+
+                    <ul>
+                        <li>Created numerical analysis &amp; transform visualisation programs with Python &amp; its related libraries &#40;eg Matplotlib, Numpy, Scipy, Sympy, etc&#41; to aid my cohorts with Engineering Mathematics
+                        </li>
+
+                        <li>Created a student intranet website wrapper, for Android devices, to aid students of University of Bristol with easier access to the University's intranet
+                        </li>
+
+                        <li>
+                            Built a collection of websites to host my online CV/r&eacute;sum&eacute; on GitHub
+                        </li>
+                    </ul>
+                </section>
+
+                <hr class="sub"/>
+
+                <section>
+                    <h3>Video Editing and Graphic Design</h3>
+                    <b>May 2017 - Present</b>
+                    <br />
+                    <i>Hobbyist/Freelance Graphic Designer and Video Editor 
+                    </i> 
+                    <ul>
+                        <li>Worked alongside Strathallan School’s Media Department to edit the outro sequence for the school's promotional materials
+                        </li>
+                        <li>Redesigned a logo for Bristol Electrical &amp; Electronic Engineering Society to better represent electronics &amp; simplified its design
+                        </li>
+                    </ul>
+                </section>
+
+                <hr class="sub"/>
+
+                <section>
+                    <h3>Music Composition</h3>
+                    <b>January 2015 - Present</b>
+                    <br />
+                    <i>Freelance Composer (<a href="https://soundcloud.com/jpiamjariyakul/">SoundCloud&nbsp;Profile</a>) 
+                    </i> 
+                    <ul>
+                        <li>Commissioned by Strathallan School’s Media Department to compose music for their promotional materials
+                        </li>
+                        <li>Collaborated with a DeviantArt user to compose character themes for their personal fiction project
+                        </li>
+                    </ul>
+                </section>
+
+                <hr class="sub"/>
+
+                <section>
+                    <h3>Comic Book Club</h3>
+                    <b>October 2015 - February 2017</b>
+                    <br />
+                    <i>Member of Storyboard &amp; Writer's&nbsp;Room</i>
+                    <ul>
+                        <li>Co-formed the Writer's&nbsp;Room, alongside other fellow creative writers,  of the Comic Book Club at Strathallan&nbsp;School, and presented ideas and storyboards to other divisions of the club, allowing for rapid workflow while maintaining quailty of each aspect
+                        </li>
+                    </ul>
+                </section>
+
+                <hr class="sub"/>
+
+                <section>
+                    <h3>Public Service</h3>
+                    <b>September 2013 - June 2015</b>
+                    <br />
+                    <i>Team Member</i>
+                    <ul>
+                        <li>
+                            Regularly assisted the local Kinross community with cleaning up the surrounding woodlands, and set up methods of maintaining the integrity &amp; sustainability of the area's future
+                        </li>
+                    </ul>
+                </section>
+
+                <hr class="sub"/>
+
+                <section>
+                    <h3>Duke of Edinburgh: Bronze Expedition</h3><b>September 2013 - June 2014</b>
+                    <br />
+                    <i>Navigator &amp; Resource Management</i>
+                    <ul>
+                        <li>
+                            Analysed the Kinross area and managed the navigation roadmap in the woodlands prior to the expedition, and managed the team's resources in the expedition
+                        </li>
+                        <li>
+                            Alongside team members, plotted the shortest pathway to destinations without compromising safety considerations
+                        </li>
+                        <li>
+                            Rationed each team member's resource for overnight stay at designated area
+                        </li>
+                    </ul>
+                </section>
+
+            </article>
+            
+            <hr />
+            
+            <article class="skills" id="skills">
+                <heading>
+                    <h2>Technology Proficiencies</h2>
+                </heading>
                 <p>
-                    Please do not hesitate to contact me, via e-mail, at <a href="mailto:j.piamjariyakul@outlook.com">j.piamjariyakul&#64;outlook.com</a>
-                    or <a href="mailto:jp17033@bristol.ac.uk">jp17033&#64;bristol.ac.uk</a>, or via <a href="https://www.linkedin.com/in/jaypat-piamjariyakul-63ba11158/">my LinkedIn profile</a>.
+                    Proficient in using <b>Microsoft&nbsp;Office</b> suites &#40;including Excel and Publisher&#41;, utilizing IDEs alongside <b>programming</b> languages &#40;such as Python, C, and VB&#46;net&#41;, and <b>audio manipulation</b> via Digital Audio Workspaces &#40;DAWs&#41;.
                 </p>
                 <p>
-                    If you would like to request a printable CV/r&eacute;sum&eacute;, please specify so via either e-mails.
+                    Developing skills in <b>HTML, CSS,</b> and <b>JavaScript</b>. Continuously improving on <b>Android application development</b>, and <b>music composition</b> &#40;both notational and sequential&#41;.
                 </p>
-            </section
--->
-            <!--hr />
-<article style="padding: 8px 8px 8px 8px">
-<form action="mailto:j.piamjariyakul@outlook.com" method="post" enctype="text/plain">
-<style>
-input.oneline
-{
-width: 100%;
-padding: 4px 8px;
-margin: 4px 0;
-box-sizing: border-box;
-border: none;
-border-bottom: 2px solid steelblue;
-}
-.multiline
-{
-width: 100%;
-padding: 8px 8px;
-margin: 4px 0;
-box-sizing: border-box;
-resize: vertical;
-border-radius: 8px;
-border: 2px solid steelblue;
-}
-input.button
-{
-background-color: steelblue;
-color: white;
-padding: 4px 8px;
-border: none;
-cursor: pointer;
-width: 100%;
-margin: 4px 0 4px 0;
-display: inline-block;
-}
-</style>
+                
+                <header>
+                    <h2>Interests &amp; Hobbies</h2>
+                </header>
+                <p>
+                    Passionate about <b>game development &amp; design</b>, learning <b>new languages</b> &#40;both verbal, programming, and markup&#41;, <b>programming</b> personal projects for leisure, and conjuring projects with <b>Arduino</b> microcontroller.
+                </p>
+                <p>
+                    Hobbies include <b>music composition</b>, <b>graphic design</b>, <b>photography</b> &#40;mostly landscape &amp; architecture&#41;, cartoon/comic <b>sketching</b> &amp; <b>fashion design</b>, and <b>creative writing</b>.
+                </p>
+            </article>
+            
+            <hr />
+            
+            <article class="achievements" id="achievements">
+                <header>
+                    <h2>Awards &amp; Achievements</h2>
+                </header>
 
-<div style="margin-left: 8px">Name</div>
-<input type="text" name="name" class="oneline">
-<br />
+                <section>
+                    <h3>2018</h3>
+					<ul>
+						<li>
+							<b>HTML Essential Training</b> &#40;<i>LinkedIn Learning</i> - Completed&nbsp;July&#41;
+						</li>
+					</ul>
+                    <ul>
+                        <li>
+                            <b>Android App Development Course</b> &#40;<i>LinkedIn Learning</i> - Completed&nbsp;July&#41;
+                        </li>
+                    </ul>
+                </section> 
 
-<div style="margin-left: 8px; margin-top: 4px">Sender's E-mail Address</div>
-<input type="email" name="address" class="oneline">
-<br />
+                <section>
+                    <h3>2017</h3>
+                    <ul>
+                        <li>
+                            <b>Grade-6 Singing</b> &#40;<i>ABRSM</i> - Received&nbsp;March&#41;
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>2015</h3>
+                    <ul>
+                        <li>
+                            <b>Grade-5 Music Theatre</b> &#40;<i>ABRSM</i> - Received&nbsp;February&#41;
+                        </li>
 
-<div style="margin-left: 8px; margin-top: 4px">Subject</div>
-<textarea type="text" name="subject" placeholder="Write e-mail content here..." maxlength="1000" cols="30" rows="6" class="multiline"></textarea>
-<br />
+                        <li>
+                            <b>Gary&nbsp;Rogers Creative Writing Prize</b> &#40;<i>Strathallan School</i> - Received&nbsp;May&#41;
+                        </li>
 
-<input class="button" type="submit" value="Send E-mail" />
-<input class="button" type="reset" value="Reset" />
-</form>
-</article-->
+                        <li>
+                            <b>Grade-6 Music Theatre</b> &#40;<i>ABRSM</i> - Received&nbsp;November&#41;
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>2014</h3>
+                    <ul>
+                        <li>
+                            <b>Duke of Edinburgh: Bronze Award</b> &#40;<i>Duke of Edinburgh Program</i> - Received&nbsp;June&#41;
+                        </li>
+                    </ul>
+                </section>
+            </article>
+            
+            
         </div>
+        
         <!-- Bottom Bars -->
         <footer role="contentinfo" class="bottom_bar">
             <p>Made with love &amp; hosted on GitHub Pages</p>
+            
+            <!--script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script-->
         </footer>
     </body>
 </html>
