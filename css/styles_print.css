@@ -1,25 +1,64 @@
+@media screen
+{
+    .no-print
+    {
+        display: inline;
+    }
+    
+    .print-only
+    {
+        display: none;
+    }
+}
+
 @media print
 {    
+    html
+    {
+        line-height: 16px;
+        font-family: "Noto Serif", serif;
+    }
     nav.navbar
     {
         display: none; /* !important;*/
     }
     
-    header.name, div.main
+    header.name, div.main, p
     {
         margin: 0;
         padding: 0;
     }
     
-    header.name p.links
+    article.achievements ul
+    {
+        margin: 0;
+        list-style-type: square;
+    }
+    
+    header.name p.links, hr.sub
     {
         display: none;
     }
     
+    header.name h1
+    {
+        font-size: 16px;
+    }
+    
+    header.name
+    {
+        text-align: center;
+    }
+    
     h1, h2, h3, h4, h5, h6, section, p
     {
-        font-size: 10pt;
+        font-size: 12px;
         padding: 0;
+    }
+    
+    section h3
+    {
+        text-decoration: underline;
     }
     
     hr
@@ -36,5 +75,15 @@
     footer
     {
         display: none;
+    }
+    
+    .no-print
+    {
+        display: none;
+    }
+    
+    .print-only
+    {
+        display: inline;
     }
 }

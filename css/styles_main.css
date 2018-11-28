@@ -191,3 +191,8 @@ section.blog section.year section.month article::after
     margin-left: 20px;
     margin-right: 20px;
 }
+
+section
+{
+    page-break-inside: avoid;
+}
