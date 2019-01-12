@@ -1,12 +1,12 @@
 @import "styles_navbar.css";
 
-@import url(//fonts.googleapis.com/css?family=Noto+Serif);
+/* @import url(//fonts.googleapis.com/css?family=Noto+Serif); */
 /* OpenSans font is imported from 'styles_navbar.css' */
 
 /* Default styling for all pages */
 html
 {
-    font-family: "Noto Serif", serif;
+    font-family: "Open Sans", sans-serif;
     /*background-color: rgb(55, 95, 130);*/
     background-color: rgb(40,40,40);
     overflow: scroll;
@@ -192,7 +192,7 @@ section.blog section.year section.month article::after
     margin-right: 20px;
 }
 
-section
+article, section
 {
     page-break-inside: avoid;
 }
