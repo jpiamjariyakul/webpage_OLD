@@ -1,0 +1,198 @@
+@import "styles_navbar.css";
+
+/* @import url(//fonts.googleapis.com/css?family=Noto+Serif); */
+/* OpenSans font is imported from 'styles_navbar.css' */
+
+/* Default styling for all pages */
+html
+{
+    font-family: "Open Sans", sans-serif;
+    /*background-color: rgb(55, 95, 130);*/
+    background-color: rgb(40,40,40);
+    overflow: scroll;
+    font-size: 100%;
+}
+
+header.name, div.main, footer
+{
+    background: white;
+}
+
+/* Applies to name/image/link headings on every page
+Is not visible in mobile devices (hidden)
+*/
+header.name
+{
+    font-family: "Open Sans", sans-serif;
+    text-align: right;
+    padding: 8px 32px 8px 32px;
+    margin: 10px;
+    margin-right: auto;
+    margin-left: 200px;
+    overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6, a
+{
+    font-family: "Open Sans", sans-serif;
+    color: rgb(29, 31, 33);
+}
+
+/* Applies to any content not including the navigation bar */
+div.main
+{
+    padding: 16px 32px 16px 32px;
+    margin: 10px;
+    margin-right: auto;
+    margin-left: 200px;
+}
+
+/* Applies to h2 subheading - is underlined for emphasis */
+h2
+{
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+/*
+Styling for profile image
+* If not on mobile, sets image to float-right; otherwise, centers image
+* Causes image to be square-rounded with border
+* Sets max image size to be 20px
+*/
+/*img.profile
+{
+    float: right;
+    margin: 10px 30px;
+
+    display: flex;
+    height: 150px;
+
+    border: solid 8px;
+    border-color: rgb(55, 95, 130);
+    border-radius: 25%;
+    max-width: 100%;
+}*/
+
+/*CSS for navbar moved to different file*/
+
+/*Dividing lines - sub-lines are overridden by CSS after*/
+hr
+{
+    border-width: 4px;
+}
+/* Sub dividing-lines are thinner & less apparent */
+hr.sub
+{
+    border-width: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*Change list icon to square, from standard circle*/
+li
+{
+    list-style-type: square
+}
+
+/* Applies to footer of page - only creates padding for ease in readability
+Unlike other general contents in page, text is aligned to center instead of left
+*/
+footer
+{
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    padding: 8px 32px 8px 32px;
+    margin: 10px;
+    margin-right: auto;
+    margin-left: 200px;
+}
+
+/* General settings for mobile devices' page, excluding navbar (see other CSS sheet)
+* Causes margin on top of regular page to expand from 20px to 40px
+* Moves image from float-right to center
+* Excluding index.html (which has an overriding style), hides name/links/image header entirely
+*/
+@media screen and (max-width: 875px)
+{
+    header.name
+    {
+        text-align: center;
+    }
+    /*img.profile
+    {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        height: 200px;
+    }*/
+}
+
+@media screen and (max-width: 700px)
+{
+    header.name
+    {
+        display: none;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    div.main
+    {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    footer
+    {
+        margin-left: 0;
+    }
+}
+
+/* FontAwesome icons */
+a i.fab
+{
+    font-size: 25px;
+    color: dimgrey;
+}
+
+/* Applies to blog page
+* Creates dividing lines between articles & years
+*/
+section.blog section.year::after
+{
+    content: "";
+    display: block;
+    border-style: inset;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-width: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section.blog section.year section.month::after
+{
+    content: "";
+    display: block;
+    border-style: inset;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-width: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+section.blog section.year section.month article::after
+{
+    content: "";
+    display: block;
+    border-style: inset;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-width: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+article, section
+{
+    page-break-inside: avoid;
+}
