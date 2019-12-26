@@ -21,7 +21,15 @@ return (
 	</header>
 
 	<section>
-        <h3 style={{display: 'inline', margin: 'inherit'}}>University&nbsp;of&nbsp;Bristol</h3><p style={{display: 'inline'}}><i style={{float: 'right'}}>September 2017 - June 2021</i></p>
+        <h3 style={{display: 'inline', margin: 'inherit'}}>University&nbsp;of&nbsp;Bristol</h3><p style={{display: 'inline'}}><i style={{float: 'right'}}>September 2017 - June 2021</i></p>		
+		<div>
+			<p style={{display: 'inline', margin: 'inherit'}}>
+				(Integrated) Master of Electrical &amp; Electronic Engineering
+			</p>
+			<p style={{display: 'inline'}}><div style={{float: 'right'}}>
+				Predicted 1st Class Honours
+			</div></p>
+		</div>
 		<ul>
 			<li>
 				Achieved 1st (70%) in First Year and 1st (70%) in Second Year
