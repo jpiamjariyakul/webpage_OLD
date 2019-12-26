@@ -1,5 +1,5 @@
 import React from 'react';
-import ListBuild from './listBuild.js';
+import ListBuild from './js_reusable/listBuild.js';
 
 const ls_digimakers = [
 "Teaching children & young adults (from the age of 8-18 years) of useful Engineering skills, introducing students to the concepts & discipline involved within the field",

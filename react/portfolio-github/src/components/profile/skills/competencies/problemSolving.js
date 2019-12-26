@@ -1,5 +1,5 @@
 import React from 'react';
-import SkillRender from '../skillRender.js';
+import SkillRender from '../../js_reusable/skillRender.js';
 
 const ls_items = [
 	"Designing & fabricating a Rubik’s Cube puzzle-solving robot from minimal requirements, with concerns to resource efficiency, performance, design choices, longetivity, and correct output",

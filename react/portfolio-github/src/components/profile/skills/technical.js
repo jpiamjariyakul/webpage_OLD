@@ -1,5 +1,5 @@
 import React from 'react';
-import ListBuild from '../listBuild.js'
+import ListBuild from '../js_reusable/listBuild.js'
 
 const ls_items = [
 	"Experienced with FPGA & embedded SoC development with VHDL/C/C++ utilising ModelSim & Xilinx ISE",

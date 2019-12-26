@@ -1,5 +1,5 @@
 import React from 'react';
-import ListBuild from '../listBuild.js'
+import ListBuild from './listBuild.js'
 
 
 function SkillRender(props) {

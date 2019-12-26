@@ -1,5 +1,5 @@
 import React from 'react';
-import SkillRender from '../skillRender.js';
+import SkillRender from '../../js_reusable/skillRender.js';
 
 const ls_items = [
 	"Developed communication skills & techniques essential to explaining difficult engineering concepts for children & students in the OutReach programme, including learning & understanding each individual’s needs",

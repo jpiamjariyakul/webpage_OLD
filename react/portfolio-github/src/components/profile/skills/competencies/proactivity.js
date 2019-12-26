@@ -1,5 +1,5 @@
 import React from 'react';
-import SkillRender from '../skillRender.js';
+import SkillRender from '../../js_reusable/skillRender.js';
 
 const ls_items = [
 	"Studied & practiced OpenCV and additional Python-based modules prior to beginning the Rubik’s Cube Solving Robot project in Week 2 of studies",

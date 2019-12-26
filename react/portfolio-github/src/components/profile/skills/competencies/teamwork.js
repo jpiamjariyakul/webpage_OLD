@@ -1,5 +1,5 @@
 import React from 'react';
-import SkillRender from '../skillRender.js';
+import SkillRender from '../../js_reusable/skillRender.js';
 
 const ls_items = [
 	"Leader of the Electronics Division of CitiBlox. Organised multiple team meetings with fellow team members, liaised with our sub-teams and other divisions, and arranged necessary equipment & purchases necessary for prototyping",

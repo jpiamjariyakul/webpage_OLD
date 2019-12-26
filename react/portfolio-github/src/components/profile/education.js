@@ -1,5 +1,5 @@
 import React from 'react';
-import ListBuild from './listBuild.js';
+import ListBuild from './js_reusable/listBuild.js';
 
 const ls_Bristol = [
 "Achieved 1st (70%) in First Year and 1st (70%) in Second Year",
@@ -18,9 +18,14 @@ return (
 	<header>
 		<h2>EDUCATION &amp; QUALIFICATIONS</h2>
 	</header>
-
-	<section>
-        <h3 style={{display: 'inline', margin: 'inherit'}}>University&nbsp;of&nbsp;Bristol</h3><p style={{display: 'inline'}}><i style={{float: 'right'}}>September 2017 - June 2021</i></p>		
+	<section>	
+		<div>
+			<h3 style={{display: 'inline', margin: 'inherit'}}>
+				University&nbsp;of&nbsp;Bristol</h3>
+			<p style={{display: 'inline'}}><i style={{float: 'right'}}>
+				September 2017 - June 2021
+			</i></p>
+		</div>	
 		<div>
 			<p style={{display: 'inline', margin: 'inherit'}}>
 				(Integrated) Master of Electrical &amp; Electronic Engineering
@@ -31,8 +36,15 @@ return (
 		</div>
 		<ListBuild items={ls_Bristol}/>
     </section>
-	<section>
-		<h3 style={{display: 'inline', margin: 'inherit'}}>Strathallan School - Perth, Scotland</h3><p style={{display: 'inline'}}><i style={{float: 'right'}}>September 2012 - June 2017</i></p>
+	<section>	
+		<div>
+			<h3 style={{display: 'inline', margin: 'inherit'}}>
+				Strathallan School - Perth, Scotland
+			</h3>
+			<p style={{display: 'inline'}}><i style={{float: 'right'}}>
+				September 2012 - June 2017
+			</i></p>	
+		</div>
 		<ListBuild items={ls_Strathallan}/>
 	</section>
 </article>
