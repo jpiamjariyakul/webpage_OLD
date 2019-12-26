@@ -1,5 +1,5 @@
 import React from 'react';
-import ListBuild from '../../listBuild.js'
+import SkillRender from '../skillRender.js';
 
 const ls_items = [
 	"Leader of the Electronics Division of CitiBlox. Organised multiple team meetings with fellow team members, liaised with our sub-teams and other divisions, and arranged necessary equipment & purchases necessary for prototyping",
@@ -10,12 +10,7 @@ const ls_items = [
 function Teamwork(){
 const title = "Teamwork & Leadership";
 return(
-<section>
-	<h3 style={{display: 'inline', margin: 'inherit'}}>
-		{title}
-	</h3>
-	<ListBuild items={ls_items}/>
-</section>
+<SkillRender title={title} list={ls_items}/>
 );
 }
 

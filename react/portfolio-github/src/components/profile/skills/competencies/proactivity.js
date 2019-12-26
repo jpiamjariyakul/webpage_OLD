@@ -1,5 +1,5 @@
 import React from 'react';
-import ListBuild from '../../listBuild.js'
+import SkillRender from '../skillRender.js';
 
 const ls_items = [
 	"Studied & practiced OpenCV and additional Python-based modules prior to beginning the Rubik’s Cube Solving Robot project in Week 2 of studies",
@@ -11,12 +11,7 @@ const ls_items = [
 function Proactivity(){
 const title = "Proactivity & Preparedness";
 return(
-<section>
-	<h3 style={{display: 'inline', margin: 'inherit'}}>
-		{title}
-	</h3>
-	<ListBuild items={ls_items}/>
-</section>
+	<SkillRender title={title} list={ls_items}/>
 );
 }
 
