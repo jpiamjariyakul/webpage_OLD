@@ -30,22 +30,18 @@ return (
 			<h3 style={{display: 'inline', margin: 'inherit'}}>
 				University&nbsp;of&nbsp;Bristol
 			</h3>
-			<p style={{display: 'inline'}}>
-				<i style={{float: 'right'}}>
+			<p style={{display: 'inline'}}><i style={{float: 'right'}}>
 					Bristol, United Kingdom
-				</i>
-			</p>
+			</i></p>
 		</div>
 		<section>
 			<div>
 				<h4 style={{display: 'inline', margin: 'inherit'}}>
 					SCEEM OutReach Ambassador
 				</h4>
-				<p style={{display: 'inline'}}>
-					<i style={{float: 'right'}}>
+				<p style={{display: 'inline'}}><i style={{float: 'right'}}>
 						November 2019 - Present
-					</i>
-				</p>
+				</i></p>
 			</div>
 			<ul>
 				<li>
@@ -73,11 +69,9 @@ return (
 				<h4 style={{display: 'inline', margin: 'inherit'}}>
 					Electronics Summer Intern
 				</h4>
-				<p style={{display: 'inline'}}>
-					<i style={{float: 'right'}}>
+				<p style={{display: 'inline'}}><i style={{float: 'right'}}>
 						July 2019 - August 2019
-					</i>
-				</p>
+				</i></p>
 			</div>
 			<ul>
 				<li>
@@ -93,11 +87,9 @@ return (
 				<h4 style={{display: 'inline', margin: 'inherit'}}>
 					Leader of Electronics Division
 				</h4>
-				<p style={{display: 'inline'}}>
-					<i style={{float: 'right'}}>
+				<p style={{display: 'inline'}}><i style={{float: 'right'}}>
 						October 2018 - October 2019
-					</i>
-				</p>
+				</i></p>
 			</div>
 			<ul>
 				<li>

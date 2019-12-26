@@ -4,7 +4,7 @@ function Navbar() {
 return (
 <nav className="navbar" id="navbar">
 	{/* <h2 style="display: none;">Navbar</h2> */}
-	<a href="#" title="Homepage" className="active">Home</a>
+	{/* <a href="#" title="Homepage" className="active">Home</a> */}
 	{/* <div class="hide-mobile"> */}
 	<div className="hide-mobile">
 		<a href="#education" title="Education Profile">&#9679; Education</a>
