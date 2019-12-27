@@ -26,7 +26,7 @@ float: left;
 
 @import url(//fonts.googleapis.com/css?family=Open+Sans);
 
-nav.navbar
+div nav.navbar
 {
     height: 100%;
     width: 200px;
@@ -36,7 +36,7 @@ nav.navbar
     /*background-color: rgb(55, 95, 130);*/
 }
 
-nav.navbar a
+div nav.navbar a
 {
     font-family: "Open Sans", sans-serif;
     display: block;
@@ -47,29 +47,29 @@ nav.navbar a
     float: none;
 }
 
-nav.navbar a.active::before
+div nav.navbar a.active::before
 {
     content: "\25B8\2009";
 }
 /* Marks current page with different color + underline */
-nav.navbar a.active
+div nav.navbar a.active
 {
     font-weight: bold;
     text-decoration: none;
 }
-nav.navbar a.active::after
+div nav.navbar a.active::after
 {
     content: "\2009\25C2";
 }
 
 /* Marks page hovered with mouse */
-nav.navbar a:hover
+div nav.navbar a:hover
 {
     text-decoration: underline;
 }
 
 /* Styling for responsive page icon */
-nav.navbar a.icon
+div nav.navbar a.icon
 {
     display: none;
     text-decoration: none;
@@ -87,12 +87,12 @@ When screen size < 600px, hide all links except "Home" and expand icon
 */
 @media screen and (max-width: 700px)
 {
-    nav.navbar div.hide-mobile
+    div nav.navbar div.hide-mobile
     {
         display: none;
     }
     /* Applies to mobile navbar when not clicked */
-    nav.navbar
+    div nav.navbar
     {
         width: 100%;
         height: auto;
@@ -100,20 +100,20 @@ When screen size < 600px, hide all links except "Home" and expand icon
         top: auto;
         position: static;
     }
-    nav.navbar a
+    div nav.navbar a
     {
         padding: 8px 16px;
     }
-    nav.navbar a:not(:first-child)
+    div nav.navbar a:not(:first-child)
     {
         display: none;
     }
-    nav.navbar a.active
+    div nav.navbar a.active
     {
         text-decoration: none;
         display: block;
     }
-    nav.navbar a.icon
+    div nav.navbar a.icon
     {
         display: block;
         float: none;
@@ -127,14 +127,14 @@ When screen size < 600px, hide all links except "Home" and expand icon
         transition: 0.5s;
     }
 
-    nav.navbar a.icon:hover
+    div nav.navbar a.icon:hover
     {
         background-color: rgb(60, 60, 60);
         color: rgb(200, 205, 210);
 
     }
 
-    nav.navbar.responsive
+    div nav.navbar.responsive
     {
         
         -webkit-transition:200ms ease;
@@ -144,7 +144,7 @@ When screen size < 600px, hide all links except "Home" and expand icon
     }
     
     /* Applies to responsive navbar when clicked */
-    nav.navbar.responsive a 
+    div nav.navbar.responsive a 
     {
         display: block;
         text-align: left;
@@ -152,7 +152,7 @@ When screen size < 600px, hide all links except "Home" and expand icon
         margin-left: 0;
     }
 
-    nav.navbar.responsive a.icon
+    div nav.navbar.responsive a.icon
     {
         background-color: rgb(60, 60, 60);
         color: rgb(200, 205, 210);

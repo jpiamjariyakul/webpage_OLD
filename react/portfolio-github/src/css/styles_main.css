@@ -9,11 +9,12 @@ html
     font-family: "Open Sans", sans-serif;
     /*background-color: rgb(55, 95, 130);*/
     background-color: rgb(40,40,40);
-    overflow: scroll;
+    /* overflow: scroll; */
     font-size: 100%;
 }
 
-header.name, div.main, footer
+/*header.name, div.profile, footer*/
+header.name, article, footer
 {
     background: white;
 }
@@ -23,28 +24,29 @@ Is not visible in mobile devices (hidden)
 */
 header.name
 {
-    font-family: "Open Sans", sans-serif;
     text-align: right;
-    padding: 8px 32px 8px 32px;
-    margin: 10px;
-    margin-right: auto;
+    padding: 16px 32px 16px 32px;
+    margin: 20px;
     margin-left: 200px;
-    overflow: auto;
+}
+
+article, hr
+{
+    font-family: "Open Sans", sans-serif;
+    /* text-align: right; */
+    /* padding: 8px 32px 8px 32px; */
+    /* overflow: auto; */
+    padding: 16px 32px 16px 32px;
+    margin: 20px;
+    /* margin-right: auto;
+    margin-left: 200px; */
+    margin-left: 200px;
 }
 
 h1, h2, h3, h4, h5, h6, a
 {
     font-family: "Open Sans", sans-serif;
     color: rgb(29, 31, 33);
-}
-
-/* Applies to any content not including the navigation bar */
-div.main
-{
-    padding: 16px 32px 16px 32px;
-    margin: 10px;
-    margin-right: auto;
-    margin-left: 200px;
 }
 
 /* Applies to h2 subheading - is underlined for emphasis */
@@ -80,6 +82,7 @@ Styling for profile image
 hr
 {
     border-width: 4px;
+    display: none;
 }
 /* Sub dividing-lines are thinner & less apparent */
 hr.sub
@@ -136,7 +139,7 @@ footer
         margin-top: 0;
         margin-left: 0;
     }
-    div.main
+    article
     {
         margin-top: 0;
         margin-left: 0;

@@ -18,12 +18,12 @@
         line-height: 16px;
         font-family: "Open Sans", sans-serif;
     }
-    nav.navbar
+    div nav.navbar
     {
         display: none; /* !important;*/
     }
     
-    header.name, div.main, p
+    header.name, article, p
     {
         margin: 0;
         padding: 0;

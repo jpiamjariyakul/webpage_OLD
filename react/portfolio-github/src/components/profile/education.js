@@ -1,5 +1,6 @@
 import React from 'react';
 import ListBuild from './js_reusable/listBuild.js';
+import TitleBuild from './js_reusable/titleBuild';
 
 const ls_Bristol = [
 "Achieved 1st (70%) in First Year and 1st (70%) in Second Year",
@@ -18,14 +19,8 @@ return (
 	<header>
 		<h2>EDUCATION &amp; QUALIFICATIONS</h2>
 	</header>
-	<section>	
-		<div>
-			<h3 style={{display: 'inline', margin: 'inherit'}}>
-				University&nbsp;of&nbsp;Bristol</h3>
-			<p style={{display: 'inline'}}><i style={{float: 'right'}}>
-				September 2017 - June 2021
-			</i></p>
-		</div>	
+	<section>
+        <TitleBuild text={"University of Bristol"} details={"September 2017 - June 2021"} tier={"3"} typeset={"i"}/>	
 		<div>
 			<p style={{display: 'inline', margin: 'inherit'}}>
 				(Integrated) Master of Electrical &amp; Electronic Engineering
@@ -36,15 +31,8 @@ return (
 		</div>
 		<ListBuild items={ls_Bristol}/>
     </section>
-	<section>	
-		<div>
-			<h3 style={{display: 'inline', margin: 'inherit'}}>
-				Strathallan School - Perth, Scotland
-			</h3>
-			<p style={{display: 'inline'}}><i style={{float: 'right'}}>
-				September 2012 - June 2017
-			</i></p>	
-		</div>
+	<section>
+        <TitleBuild text={"Strathallan School - Perth, Scotland"} details={"September 2012 - June 2017"} tier={"3"} typeset={"i"}/>
 		<ListBuild items={ls_Strathallan}/>
 	</section>
 </article>

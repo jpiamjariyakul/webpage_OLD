@@ -1,5 +1,6 @@
 import React from 'react';
 import ListBuild from './js_reusable/listBuild.js';
+import TitleBuild from './js_reusable/titleBuild';
 
 const ls_digimakers = [
 "Teaching children & young adults (from the age of 8-18 years) of useful Engineering skills, introducing students to the concepts & discipline involved within the field",
@@ -24,57 +25,20 @@ return (
 		<h2>WORK EXPERIENCE</h2>
 	</header>
 	<section> {/* University of Bristol */}
-		<div>
-			<h3 style={{display: 'inline', margin: 'inherit'}}>
-				University&nbsp;of&nbsp;Bristol
-			</h3>
-			<p style={{display: 'inline'}}><i style={{float: 'right'}}>
-					Bristol, United Kingdom
-			</i></p>
-		</div>
+        <TitleBuild text={"University of Bristol"} details={"Bristol, United Kingdom"} tier={"3"} typeset={""}/>
 		<section>
-			<div>
-				<h4 style={{display: 'inline', margin: 'inherit'}}>
-					SCEEM OutReach Ambassador
-				</h4>
-				<p style={{display: 'inline'}}><i style={{float: 'right'}}>
-						November 2019 - Present
-				</i></p>
-			</div>
+            <TitleBuild text={"SCEEM OutReach Ambassador"} details={"November 2019 - Present"} tier={"4"} typeset={"i"}/>
 			<ListBuild items={ls_digimakers}/>
 		</section>
 	</section>
 	<section> {/* CitiBlox Ltd */}
-		<div>
-			<h3 style={{display: 'inline', margin: 'inherit'}}>
-				CitiBlox&nbsp;Ltd
-			</h3>
-			<p style={{display: 'inline'}}>
-				<i style={{float: 'right'}}>
-					Bristol, United Kingdom
-				</i>
-			</p>
-		</div>
+        <TitleBuild text={"CitiBlox Ltd"} details={"Bristol, United Kingdom"} tier={"3"} typeset={""}/>
 		<section>
-			<div>
-				<h4 style={{display: 'inline', margin: 'inherit'}}>
-					Electronics Summer Intern
-				</h4>
-				<p style={{display: 'inline'}}><i style={{float: 'right'}}>
-						July 2019 - August 2019
-				</i></p>
-			</div>
+            <TitleBuild text={"Electronics Summer Intern"} details={"July 2019 - August 2019"} tier={"4"} typeset={"i"}/>
 			<ListBuild items={ls_citiblox[0]}/>
 		</section>
 		<section>
-			<div>
-				<h4 style={{display: 'inline', margin: 'inherit'}}>
-					Leader of Electronics Division
-				</h4>
-				<p style={{display: 'inline'}}><i style={{float: 'right'}}>
-						October 2018 - October 2019
-				</i></p>
-			</div>
+            <TitleBuild text={"Leader of Electronics Division"} details={"October 2018 - October 2019"} tier={"4"} typeset={"i"}/>
 			<ListBuild items={ls_citiblox[1]}/>
 		</section>
 	</section>
